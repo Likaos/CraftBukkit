@@ -40,4 +40,9 @@ public class CraftArrow extends AbstractProjectile implements Arrow {
     public EntityType getType() {
         return EntityType.ARROW;
     }
+    
+    public void setKnockbackStrength(int knockbackStrength)
+    {
+        getHandle().a(knockbackStrength);
+    }
 }
