@@ -457,7 +457,7 @@ public class EntityArrow extends Entity implements IProjectile {
     }
     
     public int getKnockbackStrength() {
-        return aw > 0 ? aw : 0;
+        return aw;
     }
     // CraftBukkit end
 }

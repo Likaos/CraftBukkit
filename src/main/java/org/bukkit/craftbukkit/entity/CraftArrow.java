@@ -45,7 +45,7 @@ public class CraftArrow extends AbstractProjectile implements Arrow {
         getHandle().a(knockbackStrength);
     }
     
-    public int knockbackStrength() {
+    public int getKnockbackStrength() {
         return getHandle().getKnockbackStrength();
     }
 }
