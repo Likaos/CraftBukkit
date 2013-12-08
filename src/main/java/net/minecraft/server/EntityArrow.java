@@ -21,7 +21,7 @@ public class EntityArrow extends Entity implements IProjectile {
     private int j;
     private int au;
     private double damage = 2.0D;
-    private int aw;
+    public int aw;
 
     public EntityArrow(World world) {
         super(world);
@@ -454,6 +454,10 @@ public class EntityArrow extends Entity implements IProjectile {
     // CraftBukkit start
     public boolean isInGround() {
         return inGround;
+    }
+    
+    public int getKnockbackStrength() {
+        return aw > 0 ? aw : 0;
     }
     // CraftBukkit end
 }
